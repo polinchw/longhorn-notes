@@ -22,16 +22,16 @@ There were a few things I really liked about it:
 
 Installing Longhorn in a Rancher Kubernetes cluster is easy.  You can
 install it from Rancher's App Catalog.  Once Longhorn is installed you 
-can used it as a Storage Class for your PVCs.
+can use it as a Storage Class for your PVCs.
 
 
 ![Diagram](screenshots/setup-longhorn.png)
 
 ### Using Minio for Backups
 
-I set up Minio as for storing PVC backups `offsite`.  Minio uses the 
+I set up Minio for storing PVC backups `offsite`.  Minio uses the 
 Amazon S3 protocol.  I created a bucket in Minio called `backup`.  Longhorn
-will be set up to send backups to 
+will be set up to send backups to it.
 
 ![Diagram](screenshots/minio.png)
 
@@ -41,7 +41,7 @@ will be set up to send backups to
 
 Longhorn will need a Kubernetes Secret in the longhorn namespace to 
 authenticate with Minio. This was tricky to set up because the values
-needed to work we're so intuative.
+needed to work weren't so intuitive.
 
 ```
 apiVersion: v1
