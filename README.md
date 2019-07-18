@@ -72,7 +72,7 @@ After Longhorn is configured to point to Minio you can take a backup from the Vo
 
 ### Restoring a PVC
 
-The PVCs can be restored from this screen.  
+The PVCs can be restored from the Backup age.
 
 ![Diagram](screenshots/backup.png)
 
