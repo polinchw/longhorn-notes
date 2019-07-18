@@ -65,7 +65,7 @@ type: Opaque
 
 ### Taking a Backup of a PVC
 
-After Longhorn is configured to point to Minio.  You can take a backup.  From this screen.
+After Longhorn is configured to point to Minio.  You can take a backup.  From this Volume page.
 
 ![Diagram](screenshots/volume-backup.png)
 
