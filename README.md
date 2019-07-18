@@ -68,3 +68,22 @@ type: Opaque
 After Longhorn is configured to point to Minio.  You can take a backup.  From this screen.
 
 ![Diagram](screenshots/volume-backup.png)
+
+
+### Restoring a PVC
+
+The PVCs can be restored from this screen.  
+
+![Diagram](screenshots/backup.png)
+
+The restore process is not very intuitive.  These are the steps I went through
+to restore a PVC.
+
+1. `Delete` the app (Chartmuseum in this case) to simulate a failure.
+2. `Create` a `Disaster Recovery Volume` from the Backup page.
+3. `Activate` the `Disaster Recovery Volume` from the Volumes page.
+4. Create a `PV/PVC` from the Volumes page.
+5. `DO NOT` attach the new PV/PVC from the Volumes page (this happens automatically in the next step). 
+6. Re install the app you deleted from step 1. and select the PV/PVC created from step 4.  
+7. The data should be restored at this point.
+ 
