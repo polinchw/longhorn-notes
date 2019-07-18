@@ -84,6 +84,6 @@ to restore a PVC.
 3. `Activate` the `Disaster Recovery Volume` from the Volumes page.
 4. Create a `PV/PVC` from the Volumes page.
 5. `DO NOT` attach the new PV/PVC from the Volumes page (this happens automatically in the next step). 
-6. Re install the app you deleted from step 1. and select the PV/PVC created from step 4.  
+6. Reinstall the app you deleted from step 1. and select the PV/PVC created from step 4.  
 7. The data should be restored at this point.
  
